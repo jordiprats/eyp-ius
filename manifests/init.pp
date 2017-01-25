@@ -1,5 +1,4 @@
 class ius (
-            $manage_package        = true,
             $package_ensure        = 'installed',
           ) inherits ius::params{
 

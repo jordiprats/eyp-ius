@@ -15,7 +15,7 @@
 
 ## Overview
 
-setup Inline with Upstream Stable repository
+setup Inline with Upstream Stable (**IUS**) repository
 
 ## Module Description
 
@@ -37,14 +37,19 @@ class { '::ius': }
 
 ## Usage
 
+We can also use this module to ensure IUS' absence:
 
+```puppet
+class { '::ius':
+  ensure => 'absent',
+}
+```
 
 ## Reference
 
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
+### ius
+
+* **package_ensure**: package status (default: 'installed')
 
 ## Development
 
@@ -53,7 +58,7 @@ have some test to check both presence and absence of any feature
 
 ### TODO
 
-TODO list
+* be able to manage **yum.repos.d** files
 
 ### Contributing
 
