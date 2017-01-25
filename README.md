@@ -50,6 +50,7 @@ class { '::ius':
 ### ius
 
 * **package_ensure**: package status (default: 'installed')
+* **import_gpgkey**: automatically import IUS GPG key (default: true)
 
 ## Development
 
