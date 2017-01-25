@@ -1,5 +1,9 @@
 class ius::install inherits ius {
 
+  Exec {
+    path => '/usr/sbin:/usr/bin:/sbin:/bin',
+  }
+
   include ::epel
 
   package { $ius::params::package_name:
