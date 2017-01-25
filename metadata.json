@@ -9,7 +9,7 @@
   "issues_url": "https://github.com/jordiprats/eyp-ius/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
-    {"name":"eyp/epel","version_requirement":">= 3.1.1 < 0.4.0"}
+    {"name":"eyp/epel","version_requirement":">= 3.1.1"}
   ],
   "operatingsystem_support": [
     {
