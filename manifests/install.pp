@@ -20,7 +20,7 @@ class ius::install inherits ius {
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      source  => 'puppet:///modules/${module_name}/IUS_GPG_KEY',
+      source  => "puppet:///modules/${module_name}/IUS_GPG_KEY",
       require => Package[$ius::params::package_name],
     }
 
