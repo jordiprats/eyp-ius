@@ -6,8 +6,8 @@ class ius::install inherits ius {
 
     package { $ius::params::package_name:
       ensure   => $ius::package_ensure,
-      provider => $ius::params::rpmprovider,
-      source   => $ius::params::sourcerpm,
+      provider => $ius::params::package_provider,
+      source   => $ius::params::package_source,
       require  => Class['::epel'],
     }
   }
