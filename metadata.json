@@ -2,7 +2,7 @@
   "name": "eyp-ius",
   "version": "0.1.0",
   "author": "eyp",
-  "summary": "setup IUS repository",
+  "summary": "IUS repository management",
   "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-ius",
   "project_page": "http://systemadmin.es",
