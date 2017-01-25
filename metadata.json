@@ -5,7 +5,7 @@
   "summary": "IUS repository management",
   "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-ius",
-  "project_page": "http://systemadmin.es",
+  "project_page": null,
   "issues_url": "https://github.com/jordiprats/eyp-ius/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
