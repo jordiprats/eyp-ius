@@ -8,13 +8,24 @@ describe 'ius class' do
     it 'should work with no errors' do
       pp = <<-EOF
 
-      class { 'ius': }
+      class { 'ius':
+        enable_repo_ius => true,
+      }
 
       EOF
 
       # Run it twice and test for idempotency
       expect(apply_manifest(pp).exit_code).to_not eq(1)
       expect(apply_manifest(pp).exit_code).to eq(0)
+    end
+
+    it "packet" do
+      expect(shell("rpm -qi ius-release").exit_code).to be_zero
+    end
+
+
+    it "check repo" do
+      expect(shell("yum repolist | grep ius").exit_code).to be_zero
     end
 
   end

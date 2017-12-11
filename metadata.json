@@ -1,11 +1,11 @@
 {
   "name": "eyp-ius",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "eyp",
   "summary": "IUS repository management",
   "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-ius",
-  "project_page": null,
+  "project_page": "https://github.com/jordiprats/eyp-ius",
   "issues_url": "https://github.com/jordiprats/eyp-ius/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
@@ -14,30 +14,26 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "Scientific",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "OEL",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     }
   ],
   "requirements": [
-    {
-      "name": "pe",
-      "version_requirement": ">= 3.8.0"
-    },
     {
       "name": "puppet",
       "version_requirement": ">= 3.8.0"
