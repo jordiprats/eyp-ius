@@ -51,6 +51,15 @@ class { '::ius':
 
 * **package_ensure**: package status (default: 'installed')
 * **import_gpgkey**: automatically import IUS GPG key (default: true)
+* **enable_repo_ius**: controls enable flag (default: true)
+* **enable_repo_ius_debug**: controls enable flag (default: false)
+* **enable_repo_ius_source**: controls enable flag (default: false)
+* **enable_repo_ius_dev**: controls enable flag (default: false)
+* **enable_repo_ius_dev_debug**: controls enable flag (default: false)
+* **enable_repo_ius_dev_source**: controls enable flag (default: false)
+* **enable_repo_ius_testing**: controls enable flag (default: false)
+* **enable_repo_ius_testing_debug**: controls enable flag (default: false)
+* **enable_repo_ius_testing_source**: controls enable flag (default: false)
 
 ## Development
 
