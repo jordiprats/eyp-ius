@@ -66,9 +66,6 @@ class { '::ius':
 We are pushing to have acceptance testing in place, so any new feature should
 have some test to check both presence and absence of any feature
 
-### TODO
-
-* be able to manage **yum.repos.d** files
 
 ### Contributing
 
