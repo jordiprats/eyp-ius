@@ -57,6 +57,6 @@ class ius::params {
         }
       }
     }
-    default: { notice ("${::operatingsystem} will not have the EPEL repository applied")  }
+    default: { notice ("${::operatingsystem} will not have the IUS repository applied")  }
   }
 }
