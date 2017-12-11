@@ -36,15 +36,15 @@ class ius::config inherits ius {
   # IUS-TESTING
   #
 
-  yumrepo { 'ius-dev':
+  yumrepo { 'ius-testing':
     enable => $ius::enable_repo_ius_testing,
   }
 
-  yumrepo { 'ius-dev-debuginfo':
+  yumrepo { 'ius-testing-debuginfo':
     enable => $ius::enable_repo_ius_testing_debug,
   }
 
-  yumrepo { 'ius-dev-source':
+  yumrepo { 'ius-testing-source':
     enable => $ius::enable_repo_ius_testing_source,
   }
 
