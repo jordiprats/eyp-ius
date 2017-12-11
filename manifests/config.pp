@@ -5,15 +5,15 @@ class ius::config inherits ius {
   #
 
   yumrepo { 'ius':
-    enable => $ius::enable_repo_ius,
+    enabled => $ius::enable_repo_ius,
   }
 
   yumrepo { 'ius-debuginfo':
-    enable => $ius::enable_repo_ius_debug,
+    enabled => $ius::enable_repo_ius_debug,
   }
 
   yumrepo { 'ius-source':
-    enable => $ius::enable_repo_ius_source,
+    enabled => $ius::enable_repo_ius_source,
   }
 
   #
@@ -21,15 +21,15 @@ class ius::config inherits ius {
   #
 
   yumrepo { 'ius-dev':
-    enable => $ius::enable_repo_ius_dev,
+    enabled => $ius::enable_repo_ius_dev,
   }
 
   yumrepo { 'ius-dev-debuginfo':
-    enable => $ius::enable_repo_ius_dev_debug,
+    enabled => $ius::enable_repo_ius_dev_debug,
   }
 
   yumrepo { 'ius-dev-source':
-    enable => $ius::enable_repo_ius_dev_source,
+    enabled => $ius::enable_repo_ius_dev_source,
   }
 
   #
@@ -37,15 +37,15 @@ class ius::config inherits ius {
   #
 
   yumrepo { 'ius-testing':
-    enable => $ius::enable_repo_ius_testing,
+    enabled => $ius::enable_repo_ius_testing,
   }
 
   yumrepo { 'ius-testing-debuginfo':
-    enable => $ius::enable_repo_ius_testing_debug,
+    enabled => $ius::enable_repo_ius_testing_debug,
   }
 
   yumrepo { 'ius-testing-source':
-    enable => $ius::enable_repo_ius_testing_source,
+    enabled => $ius::enable_repo_ius_testing_source,
   }
 
 }
