@@ -19,7 +19,11 @@ describe 'ius class' do
       expect(apply_manifest(pp).exit_code).to eq(0)
     end
 
-    it "packet" do
+    describe package('ius-release') do
+      it { is_expected.to be_installed }
+    end
+
+    it "qi de paquet" do
       expect(shell("rpm -qi ius-release").exit_code).to be_zero
     end
 
