@@ -29,5 +29,11 @@ class ius::install inherits ius {
       unless  => "bash -c 'rpm -q gpg-pubkey-$(cat /etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY | gpg --throw-keyids | grep \"^pub\" | awk \"{ print \\\$2 }\" | cut -f2 -d/ | tr [A-Z] [a-z])'",
       require => File['/etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY'],
     }
+
+    exec { 'yum clean all ius':
+      command => 'yum clean all',
+      unless  => "yum repoinfo ius | grep Repo-id",
+      require => Exec['rpm import gpg eyp-ius repo'],
+    }
   }
 }
