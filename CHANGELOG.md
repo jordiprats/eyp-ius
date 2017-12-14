@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## 0.1.2
+## 0.1.3
 
-* IUS repos enable/disable flags
+* bugfix
 
 ## 0.1.1
 

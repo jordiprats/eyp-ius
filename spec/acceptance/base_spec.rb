@@ -9,7 +9,6 @@ describe 'ius class' do
       pp = <<-EOF
 
       class { 'ius':
-        enable_repo_ius => true,
       }
 
       EOF
